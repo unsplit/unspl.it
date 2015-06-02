@@ -12,6 +12,12 @@
 
   <!-- Flatdoc theme -->
   <link  href='dist/style.min.css' rel='stylesheet'>
+  <link  href='theme/firefox.css' rel='stylesheet'>
+  <link  href='theme/highlighter.css' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
   <!-- Meta -->
   <meta content="unsplit" property="og:title">
@@ -19,6 +25,93 @@
 
 </head>
 <body role='flatdoc'>
+
+  <div style="
+     background: url(http://mwils.info/img/header.jpg);
+     min-height: 91%;
+     background-size: cover;
+  ">
+
+  <div class="left" style="
+    float: left;
+    margin: 60px auto;
+    text-align: center;
+    display: block;
+    width: 35%;
+">
+  <h1 style="
+    font-family: 'Raleway', sans-serif;  color: #fff;
+    font-weight: 900;
+    font-size: 5.6em;
+    text-transform: uppercase;
+">unsplit</h1>
+<a style="
+    background: #4679BD;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    padding: 9px 0;
+    display: block;
+    margin: 20px 0px;
+">
+    <span>Open in JSFiddle</span>
+  </a>
+  <a style="background: #252527;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    padding: 9px 0;
+    display: block"><span>Open in Codepen</span></a>
+    <a style="
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    padding: 9px 0;
+    display: block;
+    margin: 20px 0px;
+">
+    <span>Open in Plunker</span>
+  </a>
+</div>
+
+    <div class="right" style="width: 65%; float: right;">
+
+<div class="firefox">
+    <div class="window">
+      <div class="cbutton"></div>
+      <div class="cbutton"></div>
+      <div class="cbutton"></div>
+    </div>
+    <div class="tabs">
+      <div class="tab">app.js</div>
+    </div>
+    <pre><code class="js">
+    $(document).ready(function() {
+
+      page.base('/album');
+      page('/', '/photos/0');
+
+      page('/photos/:page', photos);
+
+      function photos(ctx) {
+        console.log(ctx);
+      }
+
+      $scope.games = [{
+        name: "resident evil"
+      }];
+
+      $scope.buyit = [{
+        name: "really does work"
+      }];
+    });
+</code></pre>
+  </div>
+
+    </div>
+
+  </div>
 
   <div class='header'>
     <div class='left'>

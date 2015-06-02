@@ -5,6 +5,7 @@ module.exports = function(grunt) {
     'core/legacy.js',
     'core/flatdoc.js',
     'theme/script.js',
+    'theme/highlighter.js'
  ];
 
  grunt.initConfig({
@@ -23,7 +24,7 @@ module.exports = function(grunt) {
        files: [{
           expand: true,
           cwd: 'theme',
-          src: '*.css',
+          src: ['*.css'],
           dest: 'dist',
           ext: '.min.css'
        }]
@@ -48,6 +49,6 @@ module.exports = function(grunt) {
 
  grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
- grunt.registerTask('default', ['uglify', 'cssmin', 'htmlmin']);
+ grunt.registerTask('default', ['cssmin', 'htmlmin']);
 
 };
