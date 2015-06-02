@@ -1,0 +1,19 @@
+{
+  "name": "unspl.it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unsplit/unspl.it.git"
+  },
+  "author": "Michael Wilson <michaelpwilson96@gmail.com> (http://unspl.it)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unsplit/unspl.it/issues"
+  },
+  "homepage": "https://github.com/unsplit/unspl.it#readme"
+}
